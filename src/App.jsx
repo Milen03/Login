@@ -5,6 +5,7 @@ import Login from './components/Login'
 import Nav from './components/Nav'
 import Register from './components/Register'
 import TodoList from './components/TodoList'
+import NameFilter from './components/NameFilter'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
      <Route path='/register' element={<Register/>}/> 
      <Route path='/login' element={<Login/>}/>
      <Route path='/todoList' element={<TodoList/>}/>
+     <Route path='/nameFilter' element={<NameFilter/>}/>
     </Routes>
 
     </>
