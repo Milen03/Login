@@ -4,10 +4,12 @@ export default function Tabs() {
 
     const [activeTab, setActiveTab] = useState(1)
 
+
    const tabs = [
-                { id: 1, title: "Tab 1", content: "Първи таб: Добре дошли в началото!" },
-                { id: 2, title: "Tab 2", content: "Втори таб: Тук има малко повече информация." },
-                { id: 3, title: "Tab 3", content: "Трети таб: Това е финалната секция." }
+                { id: 1, title: "Virtual DOM",  content: 'Virtual DOM е леко JavaScript представяне на реалния DOM Когато има промяна в state или props, React създава нов Virtual DOM и го сравнява със стария чрез процес, наречен reconciliation.След това React обновява само променените части в реалния DOM, което прави приложението по-бързо и ефективно.' },
+                { id: 2, title: "Controlled VS Uncontrolled", content: "Controlled components са такива, при които form данните се управляват от React state. Стойността на input-а идва от state и се обновява чрез onChange handler.Uncontrolled components използват директно DOM-а за съхранение на стойности, като обикновено се достъпват чрез ref.Controlled компонентите дават повече контрол и са по-предпочитани, защото позволяват лесна валидация и управление на формата." },
+                { id: 3, title: "useEffect", content: "useEffect е hook в React, който се използва за странични ефекти като fetch заявки, работа с DOM или subscriptions.Той се изпълнява след render на компонента.Dependency array определя кога ще се изпълни: ако е празен [] → изпълнява се само при mountако има стойности → се изпълнява при промяна на тези стойностиако няма dependency array → се изпълнява при всеки renderМоже да върне cleanup функция, която се изпълнява при unmount или преди следващия effect." },
+                {id:4,title:'Key',content:'Key е специален prop в React, който се използва за идентифициране на елементи в списъци.Той помага на React при процеса на reconciliation да разбере кои елементи са променени, добавени или премахнати.Key трябва да е уникален за всеки елемент, за да може React да оптимизира render-а и да избегне грешки.'},
             ];
 
     return (
