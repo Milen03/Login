@@ -7,7 +7,8 @@ const navigation = [
   { name: 'Register', href: '/register' },
   { name: 'Login', href: '/login' },
   {name: 'Todo List', href: '/todoList'},
-  {name:'Name Filter',href:'/nameFilter'}
+  {name:'Name Filter',href:'/nameFilter'},
+  {name:'Tabs',href:'/tabs'}
 ]
 
 export default function Nav() {
