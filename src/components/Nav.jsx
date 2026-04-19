@@ -41,7 +41,7 @@ export default function Nav() {
             <Link 
               key={item.name} 
               to={item.href} 
-              className="text-sm/6 font-semibold text-black hover:text-blue-600 transition-colors"
+              className="text-sm/6 font-semibold text-red-700 hover:text-blue-600 transition-colors"
             >
               {item.name}
             </Link>
