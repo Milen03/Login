@@ -17,7 +17,6 @@ export default function TodoList() {
         setTasks([...tasks, newTask])
         setText('')
     }
-
     const remove = (id) => {
         const updateTask = tasks.filter(task => task.id !== id)
         setTasks(updateTask)

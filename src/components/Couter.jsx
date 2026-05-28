@@ -15,6 +15,12 @@ export default function Couter() {
         }
     }
 
+    const resetCounter = () => {
+        if (coute > 0){
+            setCount(c => c=0)
+        }
+    }
+
 
 
     return (
@@ -39,6 +45,11 @@ export default function Couter() {
                             className="bg-blue-500 px-4 py-2 rounded-lg text-white hover:bg-blue-400 transition"
                             onClick={degreHandler}>
                             -
+                        </button>
+                        <button
+                            className="bg-blue-500 px-4 py-2 rounded-lg text-white hover:bg-blue-400 transition"
+                            onClick={resetCounter}>
+                            reset
                         </button>
                     </div>
                     {coute === 10 && (
