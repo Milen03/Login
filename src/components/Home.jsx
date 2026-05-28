@@ -38,19 +38,16 @@ export default function Home(){
         {/* Секция с фокус точки за интервю */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <div className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-blue-500/50 transition-all duration-300 group">
-            <div className="text-3xl mb-4 group-hover:scale-110 transition-transform">⚡</div>
             <h3 className="text-xl font-bold text-white mb-2">Логика</h3>
             <p className="text-slate-500 text-sm">Фокус върху чист код и правилно управление на масиви и обекти.</p>
           </div>
 
           <div className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-emerald-500/50 transition-all duration-300 group">
-            <div className="text-3xl mb-4 group-hover:scale-110 transition-transform">🎨</div>
             <h3 className="text-xl font-bold text-white mb-2">Дизайн</h3>
             <p className="text-slate-500 text-sm">Използване на Utility-first CSS за бързо и модерно стилизиране.</p>
           </div>
 
           <div className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:border-purple-500/50 transition-all duration-300 group">
-            <div className="text-3xl mb-4 group-hover:scale-110 transition-transform">🧠</div>
             <h3 className="text-xl font-bold text-white mb-2">React State</h3>
             <p className="text-slate-500 text-sm">Дълбоко разбиране на useState, props и жизнения цикъл на компонентите.</p>
           </div>

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link,useNavigate } from "react-router"
+import userService from "../service/userService"
 
 export default function Register(){
 
@@ -11,21 +12,17 @@ const [form,setForm] = useState({
 
 const navigation = useNavigate()
 
-const handlerForSubmite = (e) =>{
-  const baseUrl = 'http://localhost:3030/users/register'
+const handlerForSubmite = async (e) =>{
+
     e.preventDefault();
 
-    fetch(baseUrl,{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify(form)
-    })
-    .then(res => res.json())
-    .then(data => {
-      console.log('Успешно',data)
+    try {
+      await userService.register(form)
       navigation('/login')
-    })
-    .catch(err => console.error(err))
+    } catch (error) {
+      console.error(error)
+    }
+   
   }
     return(     
        <>
